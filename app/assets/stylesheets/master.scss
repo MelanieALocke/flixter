@@ -17,6 +17,9 @@
   font-weight: 500;
   font-size: 1.5em;
 }
+.navbar-inverse .navbar-nav .nav-link {
+  color: white;
+}
 .hero {
   background: image_url('hero.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -31,6 +34,10 @@
   color: white;
   text-align: center;
   padding: 20px;
+  position: absolute;
+  top: 50%;
+  height: 200px;
+  margin-top: -120px;
 }
 .frosty h1 {
   font-family: "Helvetica Neue", Helvetica;
