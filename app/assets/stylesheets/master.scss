@@ -20,6 +20,9 @@
 .navbar-inverse .navbar-nav .nav-link {
   color: white;
 }
+h1, h2, h3, h4, h5, h6, .navbar {
+  margin: 0;
+}
 .hero {
   background: image_url('hero.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
