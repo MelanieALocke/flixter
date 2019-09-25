@@ -1,0 +1,14 @@
+<br />
+<div class="box-box col-10 offset-1">
+  <h1>Add a New Lesson</h1>
+  <br />
+  <%= simple_form_for @lesson, url: instructor_section_lessons_path(@section) do |f| %>
+    <%= f.input :title %>
+    <br />
+    <%= f.input :subtitle %>
+    <br />
+    <%= f.submit "Add Your Lesson" %>
+    <br />
+    <br />
+  <% end %>
+</div>
