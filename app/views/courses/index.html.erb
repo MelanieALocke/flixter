@@ -3,8 +3,13 @@
   <h1 class="text-center">Learn Something New Today!</h1>
   <hr />
 
+  <br />
+
   <% @courses.each do |course| %>
     <h2 class="text-center"><%= link_to course.title, course_path(course) %></h2>
+    <br />
+    <%= image_tag course.photo.to_s, class: 'img-fluid' %>
+    <br />
     <br />
     <div class="row">
       <div class="col-sm-8 col-12">

@@ -1,7 +1,10 @@
 <br />
 <div class="box-box col-10 offset-1">
   <h1 class="text-center"><%= @course.title %></h1>
+  <br />
+  <%= image_tag @course.photo.to_s, class: 'img-fluid' %>
 
+  <br />
   <br />
 
   <div class="row">
@@ -28,7 +31,7 @@
   <br />
 
   <div class="col-12">
-    <%= @course.sections.each do |section| %>
+    <% @course.sections.each do |section| %>
       <div class="section">
         <%= section.title %>
         <% section.lessons.each do |lesson| %>
