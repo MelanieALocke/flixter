@@ -4,8 +4,8 @@
   <br />
   <%= simple_form_for @lesson, url: instructor_section_lessons_path(current_section) do |f| %>
     <%= f.input :title %>
-    <br />
     <%= f.input :subtitle %>
+    <%= f.input :video %>
     <br />
     <%= f.submit "Add Your Lesson" %>
     <br />

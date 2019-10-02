@@ -4,4 +4,6 @@
   <h1 class="text-center"><%= current_lesson.title %></h1>
   <br />
   <p class="text-center"><%= current_lesson.subtitle %></p>
+
+  <%= link_to 'Video', current_lesson.video.to_s %>
 </div>
