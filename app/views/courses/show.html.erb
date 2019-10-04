@@ -14,11 +14,17 @@
       <% end %> 
 
       <br />
-      <br />
 
       <span class="badge badge-success">
         <%= number_to_currency @course.cost %>
       </span>
+      <br />
+
+      <% if current_user && current_user.enrolled_in?(@course) %>
+        <h3 class="badge badge-info">You are enrolled!</h3>
+      <% else %>
+        <%= link_to 'Enroll', course_enrollments_path(@course), class: 'btn btn-primary', method: :post %>
+      <% end %>
     </div>
 
     <br />
