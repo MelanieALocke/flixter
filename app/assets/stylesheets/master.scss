@@ -88,4 +88,26 @@ body {
 .clr {
   clear: both;
 }
+.lesson {
+  background-color: black;
+  margin-top: 10px;
+  height: 130px;
+  font-size: 15px;
+  padding: 10px;
+}
+.section {
+  border: 1px solid;
+  border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
+  padding: 20px;
+  background-color: #B5B5B5;
+}
+.lesson a {
+  color: white;
+  font-family: "Helvetica Neue", Helvetica;
+  font-weight: 200;
+}
+.lesson a b {
+  font-weight: 400;
+  font-size: 20px;
+}
 
