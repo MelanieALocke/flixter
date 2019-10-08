@@ -15,6 +15,10 @@ class Instructor::CoursesController < ApplicationController
     end
   end
 
+  def show
+    @section = Section.new
+  end
+
   private
 
   def require_authorized_for_current_course
