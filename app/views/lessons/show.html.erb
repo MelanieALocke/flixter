@@ -2,18 +2,38 @@
 
 <div class="box-box col-10 offset-1">
   <h1 class="text-center"><%= current_lesson.title %></h1>
-  <br />
-  <p class="text-center">
+  <h5 class="text-center">
     <%= current_lesson.subtitle %>
-  </p>
+  </h5>
 
-  <video id='my-video' class='video-js vjs-big-play-centered' controls preload='auto' width='640' height='264' data-setup='{}'>
-    <source src='<%= current_lesson.video.to_s %>' type='video/mp4'>
-    <noscript>
-      <p class='vjs-no-js'>
-        To view this video please enable JavaScript, and consider upgrading to a web browser that
-        <a href='https://videojs.com/html5-video-support/' target='_blank'>supports HTML5 video</a>
-      </p>
-    </noscript>
-  </video>
+  <br class="clr" />
+  <br />
+
+  <div class="offset-2">
+    <video id='my-video' class='video-js vjs-big-play-centered' controls preload='auto' width='640' height='264' data-setup='{}'>
+      <source src='<%= current_lesson.video.to_s %>' type='video/mp4'>
+      <noscript>
+        <p class='vjs-no-js'>
+          To view this video please enable JavaScript, and consider upgrading to a web browser that
+          <a href='https://videojs.com/html5-video-support/' target='_blank'>supports HTML5 video</a>
+        </p>
+      </noscript>
+    </video>
+  </div>
+
+  <br class="clr" />
+
+  <% if current_lesson.next_lesson.present? %>
+    <%= link_to lesson_path(current_lesson.next_lesson), class: 'btn btn-default float-right' do %>
+      Next Lesson &nbsp;
+      <span class="fa fa-forward"></span>
+    <% end %>
+  <% end %>
+
+  <div>
+    <span class="fa fa-backward"></span>
+    <%= link_to 'Back to Course Overview', course_path(current_course), class: 'btn btn-default float-left' %>
+  </div>
+
+  <br />
 </div>
