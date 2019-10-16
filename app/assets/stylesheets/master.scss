@@ -2,10 +2,10 @@
 
 .navbar {
   font-family: "Helvetica Neue", Helvetica;
-  font-weight: 400;
+  font-weight: 500;
   box-shadow: 0px 1px 2px #2a2a2a;
   background: image_url('cork-board.png');
-  font-size: 1.25em;
+  font-size: 1.4em;
   color: white;
 }
 .nav-item {
@@ -15,16 +15,20 @@
 .navbar-inverse a.navbar-brand {
   font-family: "Helvetica Neue", Helvetica;
   font-weight: 500;
-  font-size: 1.5em;
+  font-size: 1.8em;
+  color: #ffd221;
 }
 .navbar-inverse .navbar-nav .nav-link {
   color: white;
+}
+a.navbar-brand {
+  color: #fad02a;
 }
 h1, h2, h3, h4, h5, h6, .navbar {
   margin: 0;
 }
 .hero {
-  background: image_url('hero.jpg') no-repeat center center fixed;
+  background: image_url('hero.jpg') no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -143,5 +147,32 @@ ul .header .fa {
 }
 .lessons li p {
   margin: 0;
+}
+.index-blurb {
+  margin: 10px;
+}
+.course-title a {
+  color: #2d5d96;
+}
+#details-button {
+  background-color: #2d5d96;
+}
+.btn-primary {
+  background-color: #3473a3;
+}
+.yellow {
+  color: #fad02a;
+}
+#course-index-title {
+  color: white;
+  background-color: rgba(36, 32, 33, 0.9);
+  margins: 0;
+  padding: 40px;
+}
+#dashboard-title {
+  color: white;
+  background-color: rgba(36, 32, 33, 0.9);
+  margins: 0;
+  padding: 40px;
 }
 

@@ -1,13 +1,13 @@
 <br />
 
-<div class="box-box text-center col-10 offset-1">
-  <h1><%= current_user.email %></h1>
+<div class="box-box text-center col-10 offset-1" id="dashboard-title">
+  <h1>Hey, <%= current_user.email %></h1>
 </div>
 
 <br />
 
 <div class="box-box col-10 offset-1">
-  <h2>What I'm Learning</h2>
+  <h2>What You're Learning</h2>
   <hr />
   <br />
   <% current_user.enrolled_courses.each do |course| %>
@@ -33,7 +33,7 @@
 <br />
 
 <div class="box-box col-10 offset-1">
-  <h2>What I'm Teaching</h2>
+  <h2>What You're Teaching</h2>
   <hr />
   <br/>
   <% current_user.courses.each do |course| %>

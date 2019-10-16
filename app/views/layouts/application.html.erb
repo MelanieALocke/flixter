@@ -2,8 +2,7 @@
 <html>
   <head>
     <%= csrf_meta_tags %>
-    <title>Flixter</title>
-    <%= csrf_meta_tags %>
+    <title class="yellow">Flixter</title>
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -59,35 +58,33 @@
       <div class="container">
         <div class="row">
           <div class="col-12 col-sm-3 text-center">
-            <b>Teachers</b>
+            <b class="foot-title">Teachers</b>
             <br />
             <%= link_to 'Teach a Course', new_instructor_course_path %>
             <br />
             <%= link_to 'My Dashboard', dashboard_path %>
           </div>
           <div class="col-12 col-sm-3 text-center">
-            <b>About</b>
+            <b class="foot-title">About</b>
             <br />
-            <%= link_to 'Team', '#' %>
+            <%= link_to 'Development', team_path %>
             <br />
-            <%= link_to 'Careers', '#' %>
-            <br />
-            <%= link_to 'Privacy Policy', '#' %>
+            <%= link_to 'Privacy Policy', privacy_path %>
           </div>
           <div class="col-12 col-sm-3 text-center">
-            <b>Contact</b>
+            <b class="foot-title">Contact</b>
             <br />
             melanie.a.locke
             <br />
             @gmail.com
           </div>
           <div class="col-12 col-sm-3 text-center social">
-            <b>Social</b>
+            <b class="foot-title">Social</b>
             <br />
-            <%= link_to 'https://github.com/MelanieALocke' do %>
+            <%= link_to 'https://github.com/MelanieALocke', :target => "_blank" do %>
               <span class="fa fa-github-square fa-2x social-button"></span>
             <% end %>
-            <%= link_to 'https://www.linkedin.com/in/melanie-a-locke/' do %>
+            <%= link_to 'https://www.linkedin.com/in/melanie-a-locke/', :target => "_blank" do %>
               <span class="fa fa-linkedin fa-2x social-button"></span>
             <% end %>
           </div>
