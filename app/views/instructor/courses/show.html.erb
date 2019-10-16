@@ -32,18 +32,19 @@
 
 <br />
 <div class="box-box col-10 offset-1">
-  <h1 class="text-center"><%= current_course.title %></h1>
-  <br />
-  <%= image_tag current_course.photo.to_s, class: 'img-fluid offset-1' %>
-  <br />
-  <br class="clr" />
+  <div class="col-12 text-center">
+    <h1 class="text-center"><%= current_course.title %></h1>
+    <br />
+    <%= image_tag current_course.photo.to_s, class: 'img-fluid text-center' %>
+    <br />
+    <br class="clr" />
+  </div>
   <div>
     <!-- Section Button trigger modal -->
     <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#newSectionModal">
       Add a New Section
     </button>
   </div>
-  <br />
   <br />
 
   <ul class="sections">
@@ -61,6 +62,7 @@
         </button>
 
         <br class="clr" />
+        <br />
         
         <ul class="lessons">
           <% section.lessons.rank(:row_order).each do |lesson| %>
