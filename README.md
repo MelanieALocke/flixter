@@ -1,24 +1,15 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Flixter
 
-Things you may want to cover:
+Flixter is a video-learning mock-up web application built on Rails. Users can create courses to share their skills and purchase courses created by others to gain a new skill. 
 
-* Ruby version
+Check it out at [Flixter](https://flixter-melanie-locke.herokuapp.com/)
 
-* System dependencies
+## Technologies
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Ruby on Rails
+* AWS S3 video storage
+* [Stripe](https://stripe.com/)
+* Postgresql
+* Devise
